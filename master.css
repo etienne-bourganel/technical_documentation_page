@@ -1,0 +1,21 @@
+.master-box {
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "menu hero"
+    "menu content-box"
+
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.hero {
+    grid-area: hero;
+}
+
+.content-box {
+    grid-area: content-box;
+}
