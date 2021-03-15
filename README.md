@@ -2,4 +2,4 @@
 
 This project is part of the FCC Responsive Web Design Curriculum.
 
-It can be viewed <strong>here</strong>()
+It can be viewed <strong>[here]</strong>(https://etienne-bourganel.github.io/technical_documentation_page/)
