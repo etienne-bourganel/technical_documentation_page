@@ -1,21 +1,16 @@
-.master-box {
+.master_box {
     display: grid;
     grid-template-columns: 20vw 80vw;
     grid-template-rows: auto;
     grid-template-areas:
-    "menu hero"
-    "menu content-box"
+    "navbar all_sections"
 
 }
 
-.menu {
-    grid-area: menu;
+.navbar {
+    grid-area: navbar;
 }
 
-.hero {
-    grid-area: hero;
-}
-
-.content-box {
-    grid-area: content-box;
+.all_sections {
+    grid-area: all_sections;
 }
