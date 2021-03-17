@@ -1,16 +1,75 @@
-.master_box {
-    display: grid;
-    grid-template-columns: 20vw 80vw;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "navbar all_sections"
+/* GLOBAL STYLES */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    margin: 0;
+}
 
+code {
+    background-color: #ececec;
+    display: block;
+    margin: 5px;
+    padding: 0.5em;
+}
+
+/* SIZE-INDEPENDANT STYLES */
+.all_sections {
+    grid-area: all_sections;
+    padding: 0.5em;
 }
 
 .navbar {
+    background-color: black;
+    color: white;
     grid-area: navbar;
+    padding: 0.5em;
+    position: fixed;
+    text-decoration: none;
+    top: 0;
 }
 
-.all_sections {
-    grid-area: all_sections;
+.navbar header {
+    font-size: 1.5em;
+    font-style:strong;
+}
+
+.nav_link a:visited {
+    color: white;
+}
+
+.nav_link {
+    list-style: none;
+}
+
+/* LAYOUT FOR REGULAR COMPUTER SCREENS */
+@media only screen and (min-width: 600px) {
+    .master_box {
+        display: grid;
+        grid-template-columns: 20vw 10vw 50vw 10vw;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "navbar . all_sections ."
+    }
+
+    .navbar {
+        width: min-content;
+    }
+}
+
+/* LAYOUT FOR PHONE SCREENS */
+@media only screen and (max-width: 600px) {
+    .master_box {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 10vh 10vh 90vh;
+        grid-template-areas:
+            "navbar"
+            "."
+            "all_sections"
+    }
+
+    .navbar {
+        text-align: center;
+        width: 100%;
+    }
 }
