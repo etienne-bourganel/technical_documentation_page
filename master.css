@@ -36,13 +36,15 @@ code {
     font-style: strong;
 }
 
+.navbar a {
+    color: white;
+}
 .navbar a:visited {
     color: white;
 }
 
 .navbar li {
     margin: 15px;
-
 }
 
 /* LAYOUT FOR REGULAR COMPUTER SCREENS */
