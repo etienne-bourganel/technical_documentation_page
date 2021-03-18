@@ -22,30 +22,34 @@ code {
     background-color: black;
     color: white;
     grid-area: navbar;
+    left: 0;
     padding: 0.5em;
     position: fixed;
     text-decoration: none;
     top: 0;
+    list-style: none;
+
 }
 
 .navbar header {
     font-size: 1.5em;
-    font-style:strong;
+    font-style: strong;
 }
 
-.nav_link a:visited {
+.navbar a:visited {
     color: white;
 }
 
-.nav_link {
-    list-style: none;
+.navbar li {
+    margin: 15px;
+
 }
 
 /* LAYOUT FOR REGULAR COMPUTER SCREENS */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 850px) {
     .master_box {
         display: grid;
-        grid-template-columns: 20vw 10vw 50vw 10vw;
+        grid-template-columns: 20vw 10vw 50vw 40px;
         grid-template-rows: auto;
         grid-template-areas:
             "navbar . all_sections ."
@@ -57,11 +61,11 @@ code {
 }
 
 /* LAYOUT FOR PHONE SCREENS */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 850px) {
     .master_box {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 10vh 10vh 90vh;
+        grid-template-rows: 10vh 120px 90vh;
         grid-template-areas:
             "navbar"
             "."
