@@ -67,11 +67,12 @@ code {
     .master_box {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 10vh 120px 90vh;
+        grid-template-rows: 100px 120px auto;
         grid-template-areas:
             "navbar"
             "."
-            "all_sections"
+            "all_sections";
+        margin-top: 5px;
     }
 
     .navbar {
